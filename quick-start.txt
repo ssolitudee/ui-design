@@ -1,0 +1,36 @@
+# Inventory Analyzer AI Chatbot - Quick Start
+
+## Setup Instructions (Minimal)
+
+1. Create project:
+```
+npx create-next-app@latest ui-design --typescript
+```
+- Select Yes for TypeScript, ESLint, Tailwind, src/ directory, App Router
+- Use @/ for import alias
+
+2. Install additional dependencies:
+```
+npm install @emotion/react @emotion/styled
+```
+
+3. Create required files:
+- src/app/page.tsx - Main UI component
+- src/app/styles.css - Custom styling
+- src/app/layout.tsx - Root layout
+- src/components/layout/MainLayout.tsx - Layout structure
+- src/components/layout/Header.tsx - App header
+- src/components/layout/Sidebar.tsx - Chat sidebar
+
+4. Create SVG icons in public/assets:
+- summary.svg - For Summary Agent button
+- chat.svg - For Chatbot Agent button  
+- ask.svg - For FAQ questions
+- UBS_BIG.D.svg - Company logo
+
+5. Start development server:
+```
+npm run dev
+```
+
+See setup.md for complete code snippets and detailed instructions.

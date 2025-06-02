@@ -1,0 +1,228 @@
+/**
+ * Inventory Analyzer AI Chatbot - UI Styles
+ * 
+ * This stylesheet organizes styles into logical sections:
+ * 1. Page Layout
+ * 2. Welcome Section
+ * 3. Buttons
+ * 4. FAQ Section
+ * 5. Chat Interface
+ * 6. Utility Classes
+ */
+
+/* ================ 1. PAGE LAYOUT ================ */
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+}
+
+.chat-container {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* ================ 2. WELCOME SECTION ================ */
+.welcome {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.message {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight {
+  color: rgb(220, 38, 38);
+  font-weight: 700;
+  margin-right: 0.25rem;
+}
+
+.subtitle {
+  color: rgb(156, 163, 175);
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* ================ 3. BUTTONS ================ */
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.primary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(220, 38, 38, 0.9);
+  color: white;
+  border-radius: 0.5rem;
+  transition: background-color 150ms;
+  min-width: 160px;
+}
+
+.primary-btn:hover {
+  background-color: rgb(220, 38, 38);
+}
+
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(55, 65, 81);
+  color: white;
+  border-radius: 0.5rem;
+  transition: background-color 150ms;
+  min-width: 160px;
+}
+
+.secondary-btn:hover {
+  background-color: rgb(75, 85, 99);
+}
+
+.send-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(220, 38, 38, 0.9);
+  color: white;
+  border-radius: 0.5rem;
+  transition: background-color 150ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-btn:hover {
+  background-color: rgb(220, 38, 38);
+}
+
+/* ================ 4. FAQ SECTION ================ */
+.faq {
+  color: white;
+}
+
+.faq-container {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.faq-card {
+  margin-bottom: 1.5rem;
+  background-color: rgba(17, 24, 39, 0.5);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(31, 41, 55);
+}
+
+.faq-title {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.faq-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: rgba(31, 41, 55, 0.8);
+  color: white;
+  border-radius: 0.5rem;
+  transition: all 150ms;
+  text-align: left;
+}
+
+.faq-btn:hover {
+  background-color: rgb(55, 65, 81);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-0.125rem);
+}
+
+/* ================ 5. CHAT INTERFACE ================ */
+.chat-input {
+  padding: 1rem;
+  background-color: rgb(17, 24, 39);
+  border-top: 1px solid rgb(31, 41, 55);
+}
+
+.input-wrap {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.textfield {
+  flex: 1;
+  background-color: rgb(31, 41, 55);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.textfield:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.5);
+}
+
+/* ================ 6. UTILITY CLASSES ================ */
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.icon-gray {
+  opacity: 0.7;
+}
